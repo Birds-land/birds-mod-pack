@@ -2,5 +2,6 @@
 !*/
 
 !.gitignore
+!build.ps1
 
 !mods/*
