@@ -1,4 +1,9 @@
-$version = "1.20.1-1.0"
+$version = Read-Host -Prompt "Enter version"
+
+if (([string]::IsNullOrEmpty($version)))
+{
+    throw "Version required!"
+}
 
 git checkout master
 tar.exe -a -c -f birds-mods-FULL-$version.zip mods\*.jar
